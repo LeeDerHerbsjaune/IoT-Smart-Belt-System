@@ -1,0 +1,328 @@
+[21:34:28.083] [2026-06-07#006] [PID:15204] [INFO   ] [CameraController    ] ============================================================
+[21:34:28.083] [2026-06-07#006] [PID:15204] [INFO   ] [CameraController    ] SESSION START  run=2026-06-07#006  pid=15204
+[21:34:28.084] [2026-06-07#006] [PID:15204] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-07_run006.log
+[21:34:28.084] [2026-06-07#006] [PID:15204] [INFO   ] [CameraController    ] ============================================================
+[21:34:32.249] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraStream        ] CameraStream created | source=0
+[21:34:32.250] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[21:34:32.257] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[21:34:32.257] [2026-06-07#006] [PID:15204] [INFO   ] [SahiModel           ] Building SAHI model | path=D:\Project\Model\Weights\bangChuyen\best1.pt | conf=0.35 | device=cuda
+[21:34:32.624] [2026-06-07#006] [PID:15204] [INFO   ] [SahiModel           ] SAHI model built OK
+[21:34:32.624] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[21:34:32.624] [2026-06-07#006] [PID:15204] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[21:34:32.748] [2026-06-07#006] [PID:15204] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[21:34:32.748] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] CameraService initialized
+[21:34:32.749] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[21:34:32.749] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized
+[21:34:32.749] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraController    ] CameraController initialized
+[21:34:32.749] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized
+[21:34:44.799] [2026-06-07#006] [PID:15204] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[21:34:44.799] [2026-06-07#006] [PID:15204] [INFO   ] [CameraService       ] Starting camera...
+[21:34:44.799] [2026-06-07#006] [PID:15204] [INFO   ] [CameraStream        ] Opening camera source=1...
+[21:34:46.160] [2026-06-07#006] [PID:15204] [INFO   ] [CameraStream        ] Camera opened OK
+[21:34:46.161] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraStream        ] Capture loop running
+[21:34:46.161] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraStream        ] Capture thread started
+[21:34:46.161] [2026-06-07#006] [PID:15204] [INFO   ] [CameraStream        ] Camera FPS: 30.00
+[21:34:46.161] [2026-06-07#006] [PID:15204] [INFO   ] [CameraService       ] Camera started OK
+[21:34:46.479] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.524] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.572] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.618] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.720] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.769] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.822] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.862] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.902] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.942] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:46.990] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.030] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.074] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.122] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.170] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.206] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.246] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.286] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.320] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.354] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.390] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.421] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #30 received | shape=(480, 640, 3)
+[21:34:47.424] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.462] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.498] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.533] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.574] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.614] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.653] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.694] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.732] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.779] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.826] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.873] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.921] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.956] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:47.992] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.028] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.064] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.102] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.138] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.174] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.216] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.263] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.298] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.334] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.372] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.407] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.412] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #60 received | shape=(480, 640, 3)
+[21:34:48.449] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.495] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.530] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.575] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.621] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.656] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.700] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.744] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.838] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.885] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.932] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:48.979] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.025] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.070] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.118] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.158] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.194] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.229] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.270] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.310] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.349] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.390] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.413] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #90 received | shape=(480, 640, 3)
+[21:34:49.428] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.463] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.506] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.553] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.593] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.630] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.670] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.710] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.750] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.788] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.823] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.866] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.910] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.959] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:49.998] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.037] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.083] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.119] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.153] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.190] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.225] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.273] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.318] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.358] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.393] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.406] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #120 received | shape=(480, 640, 3)
+[21:34:50.430] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.465] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.502] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.537] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.572] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.614] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.662] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.702] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.740] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.782] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.818] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.864] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.910] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.950] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:50.986] [2026-06-07#006] [PID:15204] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[21:34:51.395] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #150 received | shape=(480, 640, 3)
+[21:34:52.391] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #180 received | shape=(480, 640, 3)
+[21:34:53.422] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #210 received | shape=(480, 640, 3)
+[21:34:53.951] [2026-06-07#006] [PID:15204] [INFO   ] [ESP32Controller     ] [UI] Test model button clicked
+[21:34:53.952] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorService     ] Testing model on ESP32...
+[21:34:53.952] [2026-06-07#006] [PID:15204] [DEBUG  ] [Motor               ] Testing model
+[21:34:53.952] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorService     ] Model test SUCCESS
+[21:34:54.417] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #240 received | shape=(480, 640, 3)
+[21:34:55.263] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-Circle(0.86), W-CPolygon(0.82), W-Circle(0.81), W-S-Circle(0.76), W-S-Circle(0.76), W-Trapezoid(0.75), W-S-Circle(0.75), W-Circle(0.74), W-CPolygon(0.72), W-CPolygon(0.71), R-Circle(0.71), R-Trapezoid(0.56), W-S-Circle(0.53), R-Circle(0.51), R-CPolygon(0.44), W-CPolygon(0.36), W-S-Circle(0.32), W-S-Circle(0.32), R-S-Circle(0.31), W-S-Circle(0.30), R-Circle(0.29)]
+[21:34:55.263] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(374.48468), np.float32(253.10895))
+[21:34:55.263] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[21:34:55.263] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[21:34:55.263] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[21:34:55.404] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #270 received | shape=(480, 640, 3)
+[21:34:56.397] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #300 received | shape=(480, 640, 3)
+[21:34:57.394] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #330 received | shape=(480, 640, 3)
+[21:34:58.279] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067fd72e40>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:34:58.279] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[21:34:58.279] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[21:34:58.389] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #360 received | shape=(480, 640, 3)
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.73
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.63
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.63
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.65
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.60
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.59
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.48
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.47
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-S-Circle | conf=0.64
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.70
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.63
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.81
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.81
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.75
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.83
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.83
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.79
+[21:34:59.136] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.76
+[21:34:59.137] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.74
+[21:34:59.137] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.70
+[21:34:59.137] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Square | conf=0.86
+[21:34:59.137] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Trapezoid | conf=0.71
+[21:34:59.137] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI result: 22 total objects detected.
+[21:34:59.137] [2026-06-07#006] [PID:15204] [WARNING] [ConveyorUseCase     ] [STEP3] Cụm lắp ráp KHÔNG HỢP LỆ (Thiếu hoặc thừa sai số lượng) -> PUSH
+[21:34:59.137] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Pushing servo...
+[21:34:59.137] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PUSH (angle=180)
+[21:34:59.138] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=180
+[21:34:59.435] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #390 received | shape=(480, 640, 3)
+[21:35:00.428] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #420 received | shape=(480, 640, 3)
+[21:35:01.420] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #450 received | shape=(480, 640, 3)
+[21:35:02.154] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=180 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=180 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067fefd450>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:02.355] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PULL (angle=0)
+[21:35:02.355] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=0
+[21:35:02.414] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #480 received | shape=(480, 640, 3)
+[21:35:03.414] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #510 received | shape=(480, 640, 3)
+[21:35:04.416] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #540 received | shape=(480, 640, 3)
+[21:35:05.360] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067feff110>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:05.406] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #570 received | shape=(480, 640, 3)
+[21:35:05.561] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Restarting conveyor...
+[21:35:05.561] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → START (state=1)
+[21:35:05.562] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=1
+[21:35:06.393] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #600 received | shape=(480, 640, 3)
+[21:35:07.424] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #630 received | shape=(480, 640, 3)
+[21:35:08.415] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #660 received | shape=(480, 640, 3)
+[21:35:08.564] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=1 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=1 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067fe44180>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:08.928] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-Circle(0.84), W-CPolygon(0.81), W-CPolygon(0.80), R-Circle(0.78), W-S-Circle(0.77), W-Circle(0.71), W-Trapezoid(0.71), W-S-Circle(0.71), R-Trapezoid(0.70), W-S-Circle(0.68), R-CPolygon(0.65), W-Circle(0.51), W-CPolygon(0.45), R-Circle(0.41), W-S-Circle(0.41), R-S-Circle(0.37), W-S-Circle(0.33), R-Trapezoid(0.32), R-CPolygon(0.31)]
+[21:35:08.928] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(306.94778), np.float32(274.27527))
+[21:35:08.929] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[21:35:08.929] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[21:35:08.929] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[21:35:10.061] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #690 received | shape=(480, 640, 3)
+[21:35:11.816] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #720 received | shape=(480, 640, 3)
+[21:35:11.940] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067fe449d0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:11.940] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[21:35:11.941] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[21:35:12.860] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.78
+[21:35:12.860] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.60
+[21:35:12.860] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.40
+[21:35:12.860] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.37
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.81
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.73
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.51
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.49
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.47
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.36
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-S-Circle | conf=0.67
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.73
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.45
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.82
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.81
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.60
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.83
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.78
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.77
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.77
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.75
+[21:35:12.861] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.64
+[21:35:12.862] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Square | conf=0.86
+[21:35:12.862] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Trapezoid | conf=0.52
+[21:35:12.862] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI result: 24 total objects detected.
+[21:35:12.862] [2026-06-07#006] [PID:15204] [WARNING] [ConveyorUseCase     ] [STEP3] Cụm lắp ráp KHÔNG HỢP LỆ (Thiếu hoặc thừa sai số lượng) -> PUSH
+[21:35:12.862] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Pushing servo...
+[21:35:12.863] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PUSH (angle=180)
+[21:35:12.863] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=180
+[21:35:13.682] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #750 received | shape=(480, 640, 3)
+[21:35:15.442] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #780 received | shape=(480, 640, 3)
+[21:35:15.878] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=180 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=180 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067fea3530>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:16.078] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PULL (angle=0)
+[21:35:16.079] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=0
+[21:35:17.188] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #810 received | shape=(480, 640, 3)
+[21:35:18.935] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #840 received | shape=(480, 640, 3)
+[21:35:19.091] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067e174f30>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:19.291] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Restarting conveyor...
+[21:35:19.292] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → START (state=1)
+[21:35:19.292] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=1
+[21:35:20.692] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #870 received | shape=(480, 640, 3)
+[21:35:22.299] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=1 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=1 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067e1748d0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:22.336] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #900 received | shape=(480, 640, 3)
+[21:35:22.730] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.88), W-Circle(0.84), W-CPolygon(0.81), W-Circle(0.81), W-CPolygon(0.79), W-S-Circle(0.76), R-Circle(0.75), W-S-Circle(0.72), R-CPolygon(0.71), W-Circle(0.69), W-S-Circle(0.67), W-S-Circle(0.57), W-Trapezoid(0.55), W-CPolygon(0.48), R-Trapezoid(0.48), R-Trapezoid(0.42), R-Circle(0.41), W-S-Circle(0.41), R-CPolygon(0.37), W-Trapezoid(0.34), W-S-Circle(0.34), W-CPolygon(0.33), R-Circle(0.27), W-S-Circle(0.27), W-S-Circle(0.25)]
+[21:35:22.816] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.86), W-Circle(0.85), W-Circle(0.84), W-CPolygon(0.81), W-S-Circle(0.77), W-S-Circle(0.76), W-CPolygon(0.76), R-CPolygon(0.75), R-Circle(0.74), W-S-Circle(0.69), R-Circle(0.66), W-Circle(0.58), W-Trapezoid(0.58), R-S-Circle(0.54), R-Trapezoid(0.51), R-Circle(0.50), R-CPolygon(0.49), W-CPolygon(0.46), R-Circle(0.45), W-Trapezoid(0.42), W-S-Circle(0.34), W-CPolygon(0.33), R-Trapezoid(0.32), W-S-Circle(0.31), W-S-Circle(0.31)]
+[21:35:22.901] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.86), W-Circle(0.85), W-Circle(0.84), R-CPolygon(0.82), W-CPolygon(0.81), W-CPolygon(0.77), W-S-Circle(0.77), W-S-Circle(0.75), W-S-Circle(0.73), R-Circle(0.65), W-Circle(0.62), R-Circle(0.60), W-CPolygon(0.60), W-Trapezoid(0.57), R-Circle(0.54), R-S-Circle(0.51), R-Trapezoid(0.49), W-S-Circle(0.41), R-Circle(0.38), R-CPolygon(0.35), W-S-Circle(0.32), W-S-Circle(0.31), W-Circle(0.28), R-Trapezoid(0.26), W-S-Circle(0.26)]
+[21:35:22.980] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.86), W-Circle(0.86), W-Circle(0.83), W-CPolygon(0.82), W-CPolygon(0.78), W-S-Circle(0.77), W-S-Circle(0.75), W-CPolygon(0.67), W-S-Circle(0.66), R-Circle(0.65), W-Circle(0.65), W-CPolygon(0.59), R-S-Circle(0.55), R-Circle(0.53), R-Trapezoid(0.51), W-Trapezoid(0.44), R-Trapezoid(0.42), W-Trapezoid(0.41), R-Circle(0.39), W-S-Circle(0.35), W-Circle(0.34), W-S-Circle(0.32), R-Circle(0.30), W-S-Circle(0.25)]
+[21:35:23.060] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.88), W-Circle(0.84), W-Circle(0.82), W-CPolygon(0.79), W-CPolygon(0.79), W-S-Circle(0.76), W-S-Circle(0.75), R-Circle(0.73), W-CPolygon(0.68), R-S-Circle(0.65), W-CPolygon(0.61), W-S-Circle(0.59), W-Trapezoid(0.53), R-Circle(0.52), R-CPolygon(0.38), R-Trapezoid(0.38), W-S-Circle(0.33), W-Circle(0.31), R-Circle(0.31), W-Trapezoid(0.30), W-S-Circle(0.29), W-S-Circle(0.27)]
+[21:35:23.154] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.88), W-Circle(0.86), W-CPolygon(0.82), W-Circle(0.80), R-Circle(0.79), W-S-Circle(0.76), W-S-Circle(0.76), W-CPolygon(0.76), W-S-Circle(0.69), R-CPolygon(0.66), R-Trapezoid(0.62), W-CPolygon(0.60), R-Circle(0.57), W-Trapezoid(0.56), W-CPolygon(0.49), R-CPolygon(0.47), R-S-Circle(0.44), W-Circle(0.41), W-S-Circle(0.40), R-Trapezoid(0.39), W-S-Circle(0.35), W-S-Circle(0.35), W-Circle(0.28), W-S-Circle(0.26)]
+[21:35:23.245] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.88), W-Circle(0.87), W-CPolygon(0.82), W-Circle(0.81), W-CPolygon(0.78), W-S-Circle(0.76), W-S-Circle(0.76), W-S-Circle(0.74), R-Circle(0.74), R-CPolygon(0.69), R-Trapezoid(0.66), R-Trapezoid(0.58), R-Circle(0.52), W-CPolygon(0.51), W-S-Circle(0.49), W-Circle(0.44), W-S-Circle(0.31), W-Trapezoid(0.28), W-S-Circle(0.28), W-S-Circle(0.26)]
+[21:35:23.301] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #930 received | shape=(480, 640, 3)
+[21:35:23.337] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-Circle(0.86), W-CPolygon(0.82), W-Circle(0.80), W-CPolygon(0.79), R-Circle(0.76), W-S-Circle(0.75), W-S-Circle(0.74), W-Circle(0.73), R-Circle(0.71), W-S-Circle(0.71), W-CPolygon(0.60), R-Trapezoid(0.60), R-Trapezoid(0.56), R-Circle(0.54), R-S-Circle(0.54), R-CPolygon(0.47), W-CPolygon(0.45), W-S-Circle(0.39), W-S-Circle(0.38), W-S-Circle(0.34)]
+[21:35:23.432] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-Circle(0.85), W-CPolygon(0.83), W-Circle(0.80), W-CPolygon(0.80), W-S-Circle(0.75), W-S-Circle(0.74), R-Circle(0.73), W-S-Circle(0.73), W-Circle(0.72), W-Trapezoid(0.62), R-Circle(0.60), R-Circle(0.59), R-CPolygon(0.58), R-Trapezoid(0.56), R-Circle(0.52), W-CPolygon(0.48), W-S-Circle(0.45), W-S-Circle(0.41), W-S-Circle(0.38), R-CPolygon(0.34), W-S-Circle(0.31), W-CPolygon(0.30), W-S-Circle(0.28), W-Trapezoid(0.27)]
+[21:35:23.513] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-CPolygon(0.81), W-S-Circle(0.77), W-CPolygon(0.70), W-Circle(0.68), W-CPolygon(0.54), R-Trapezoid(0.53), W-S-Circle(0.53), W-Trapezoid(0.46), R-Circle(0.45), W-CPolygon(0.43), R-Circle(0.40), R-Trapezoid(0.40), R-Circle(0.36), R-S-Circle(0.32), W-S-Circle(0.31), W-S-Circle(0.25)]
+[21:35:23.602] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-CPolygon(0.69)]
+[21:35:23.694] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.86), W-Circle(0.86), W-CPolygon(0.83), W-CPolygon(0.78), W-Circle(0.65), R-Circle(0.54), W-S-Circle(0.51), W-S-Circle(0.48), R-Trapezoid(0.43), R-Trapezoid(0.38), W-S-Circle(0.32), W-CPolygon(0.27)]
+[21:35:23.788] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Circle(0.87), W-Square(0.86), W-CPolygon(0.82), W-CPolygon(0.79), W-CPolygon(0.78), W-Circle(0.77), W-S-Circle(0.74), W-S-Circle(0.73), W-S-Circle(0.72), R-Trapezoid(0.66), R-Circle(0.65), W-Trapezoid(0.64), W-S-Circle(0.62), R-Circle(0.45), W-Circle(0.44), W-CPolygon(0.44), R-CPolygon(0.38), W-S-Circle(0.37), R-Circle(0.32), W-S-Circle(0.29), W-S-Circle(0.25)]
+[21:35:23.880] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Circle(0.87), W-Square(0.86), W-CPolygon(0.81), W-Circle(0.78), W-S-Circle(0.76), W-CPolygon(0.74), W-S-Circle(0.72), W-S-Circle(0.70), R-Circle(0.69), W-CPolygon(0.65), W-S-Circle(0.63), R-Trapezoid(0.61), W-Trapezoid(0.60), R-Circle(0.55), W-Circle(0.54), R-CPolygon(0.48), W-CPolygon(0.45), R-Trapezoid(0.41), W-S-Circle(0.30)]
+[21:35:23.961] [2026-06-07#006] [PID:15204] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.87), W-Circle(0.86), W-CPolygon(0.82), W-Circle(0.76), W-CPolygon(0.76), W-S-Circle(0.76), W-S-Circle(0.74), R-Circle(0.70), W-CPolygon(0.62), R-Trapezoid(0.60), R-Trapezoid(0.56), W-S-Circle(0.53), W-S-Circle(0.47), W-Trapezoid(0.43), W-CPolygon(0.41), R-Circle(0.32), R-CPolygon(0.31), W-S-Circle(0.30), W-S-Circle(0.29), R-S-Circle(0.26)]
+[21:35:23.961] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(406.13525), np.float32(207.51273))
+[21:35:23.961] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[21:35:23.961] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[21:35:23.961] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[21:35:24.294] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #960 received | shape=(480, 640, 3)
+[21:35:25.325] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #990 received | shape=(480, 640, 3)
+[21:35:26.319] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1020 received | shape=(480, 640, 3)
+[21:35:26.968] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067cd34050>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:26.968] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[21:35:26.968] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[21:35:27.438] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1050 received | shape=(480, 640, 3)
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.77
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-CPolygon | conf=0.70
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.64
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.59
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Circle | conf=0.48
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-S-Circle | conf=0.64
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.64
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.61
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → R-Trapezoid | conf=0.36
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.82
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-CPolygon | conf=0.73
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.83
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.82
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Circle | conf=0.50
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.74
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.72
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-S-Circle | conf=0.65
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Square | conf=0.86
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Trapezoid | conf=0.44
+[21:35:27.791] [2026-06-07#006] [PID:15204] [DEBUG  ] [SahiDetector        ]   → W-Trapezoid | conf=0.43
+[21:35:27.791] [2026-06-07#006] [PID:15204] [INFO   ] [SahiDetector        ] SAHI result: 20 total objects detected.
+[21:35:27.792] [2026-06-07#006] [PID:15204] [WARNING] [ConveyorUseCase     ] [STEP3] Cụm lắp ráp KHÔNG HỢP LỆ (Thiếu hoặc thừa sai số lượng) -> PUSH
+[21:35:27.792] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Pushing servo...
+[21:35:27.792] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PUSH (angle=180)
+[21:35:27.792] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=180
+[21:35:28.415] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1080 received | shape=(480, 640, 3)
+[21:35:29.402] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1110 received | shape=(480, 640, 3)
+[21:35:30.399] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1140 received | shape=(480, 640, 3)
+[21:35:30.799] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=180 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=180 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067cd37df0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:30.999] [2026-06-07#006] [PID:15204] [INFO   ] [Servo               ] Servo → PULL (angle=0)
+[21:35:31.000] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/setServo?angle=0
+[21:35:31.396] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1170 received | shape=(480, 640, 3)
+[21:35:32.395] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1200 received | shape=(480, 640, 3)
+[21:35:33.439] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1230 received | shape=(480, 640, 3)
+[21:35:34.013] [2026-06-07#006] [PID:15204] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/setServo?angle=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /setServo?angle=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067cd379b0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[21:35:34.214] [2026-06-07#006] [PID:15204] [INFO   ] [ConveyorUseCase     ] [STEP4] Restarting conveyor...
+[21:35:34.215] [2026-06-07#006] [PID:15204] [INFO   ] [Motor               ] Motor → START (state=1)
+[21:35:34.215] [2026-06-07#006] [PID:15204] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=1
+[21:35:34.431] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1260 received | shape=(480, 640, 3)
+[21:35:35.424] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1290 received | shape=(480, 640, 3)
+[21:35:36.416] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1320 received | shape=(480, 640, 3)
+[21:35:37.416] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1350 received | shape=(480, 640, 3)
+[21:35:39.146] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1380 received | shape=(480, 640, 3)
+[21:35:40.102] [2026-06-07#006] [PID:15204] [DEBUG  ] [CameraService       ] Frame #1410 received | shape=(480, 640, 3)

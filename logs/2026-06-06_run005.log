@@ -1,0 +1,15 @@
+[12:01:32.102] [2026-06-06#005] [PID:14264] [INFO   ] [CameraController    ] ============================================================
+[12:01:32.102] [2026-06-06#005] [PID:14264] [INFO   ] [CameraController    ] SESSION START  run=2026-06-06#005  pid=14264
+[12:01:32.102] [2026-06-06#005] [PID:14264] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-06_run005.log
+[12:01:32.103] [2026-06-06#005] [PID:14264] [INFO   ] [CameraController    ] ============================================================
+[12:01:36.939] [2026-06-06#005] [PID:14264] [DEBUG  ] [CameraStream        ] CameraStream created | index=0
+[12:01:36.939] [2026-06-06#005] [PID:14264] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[12:01:36.946] [2026-06-06#005] [PID:14264] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[12:01:36.946] [2026-06-06#005] [PID:14264] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[12:01:36.946] [2026-06-06#005] [PID:14264] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[12:01:37.113] [2026-06-06#005] [PID:14264] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[12:01:37.114] [2026-06-06#005] [PID:14264] [DEBUG  ] [CameraService       ] CameraService initialized
+[12:01:37.114] [2026-06-06#005] [PID:14264] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[12:01:37.114] [2026-06-06#005] [PID:14264] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized
+[12:01:37.114] [2026-06-06#005] [PID:14264] [DEBUG  ] [CameraController    ] CameraController initialized
+[12:01:37.114] [2026-06-06#005] [PID:14264] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized

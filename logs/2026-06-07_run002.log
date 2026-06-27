@@ -1,0 +1,529 @@
+[20:06:55.660] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] ============================================================
+[20:06:55.660] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] SESSION START  run=2026-06-07#002  pid=10404
+[20:06:55.660] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-07_run002.log
+[20:06:55.660] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] ============================================================
+[20:07:00.802] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] CameraStream created | source=0
+[20:07:00.802] [2026-06-07#002] [PID:10404] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[20:07:00.809] [2026-06-07#002] [PID:10404] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[20:07:00.809] [2026-06-07#002] [PID:10404] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[20:07:00.809] [2026-06-07#002] [PID:10404] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[20:07:01.073] [2026-06-07#002] [PID:10404] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[20:07:01.073] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] CameraService initialized
+[20:07:01.073] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[20:07:01.075] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized với Async Inspection Worker
+[20:07:01.075] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraController    ] CameraController initialized
+[20:07:01.075] [2026-06-07#002] [PID:10404] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized
+[20:08:07.246] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[20:08:07.246] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Starting camera...
+[20:08:07.247] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Opening camera source=1...
+[20:08:08.711] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera opened OK
+[20:08:08.712] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop running
+[20:08:08.713] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture thread started
+[20:08:08.713] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera FPS: 30.00
+[20:08:08.714] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera started OK
+[20:08:08.730] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1)
+[20:08:08.765] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #11)
+[20:08:08.799] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #21)
+[20:08:08.834] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #31)
+[20:08:08.873] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #41)
+[20:08:08.910] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #51)
+[20:08:08.951] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #61)
+[20:08:08.986] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #71)
+[20:08:09.023] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #81)
+[20:08:09.061] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #91)
+[20:08:09.100] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #101)
+[20:08:09.138] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #111)
+[20:08:09.172] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #121)
+[20:08:09.209] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #131)
+[20:08:09.244] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #141)
+[20:08:09.279] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #151)
+[20:08:09.315] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #161)
+[20:08:09.349] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #171)
+[20:08:09.385] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #181)
+[20:08:09.421] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #191)
+[20:08:09.461] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #201)
+[20:08:09.497] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #211)
+[20:08:09.529] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #221)
+[20:08:09.569] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #231)
+[20:08:09.608] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #241)
+[20:08:09.644] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #251)
+[20:08:09.679] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #261)
+[20:08:09.716] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #271)
+[20:08:09.755] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #281)
+[20:08:09.791] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #291)
+[20:08:09.833] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #301)
+[20:08:09.871] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #311)
+[20:08:09.907] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #321)
+[20:08:10.016] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #331)
+[20:08:10.058] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #341)
+[20:08:10.097] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #351)
+[20:08:10.133] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #361)
+[20:08:10.170] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #371)
+[20:08:10.205] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #381)
+[20:08:10.241] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #391)
+[20:08:10.282] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #401)
+[20:08:10.323] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #411)
+[20:08:10.367] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #421)
+[20:08:10.404] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #431)
+[20:08:10.441] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #441)
+[20:08:10.478] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #451)
+[20:08:10.520] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #461)
+[20:08:10.558] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #471)
+[20:08:10.597] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #481)
+[20:08:10.634] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #491)
+[20:08:10.671] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #501)
+[20:08:10.708] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #511)
+[20:08:10.749] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #521)
+[20:08:10.785] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #531)
+[20:08:10.824] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #541)
+[20:08:10.864] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #551)
+[20:08:10.901] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #561)
+[20:08:10.939] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #571)
+[20:08:10.978] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #581)
+[20:08:11.020] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #591)
+[20:08:11.058] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #601)
+[20:08:11.094] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #611)
+[20:08:11.132] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #621)
+[20:08:11.168] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #631)
+[20:08:11.204] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #641)
+[20:08:11.243] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #651)
+[20:08:11.283] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #661)
+[20:08:11.321] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #671)
+[20:08:11.359] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #681)
+[20:08:11.398] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #691)
+[20:08:11.436] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #701)
+[20:08:11.476] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #711)
+[20:08:11.516] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #721)
+[20:08:11.554] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #731)
+[20:08:11.594] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #741)
+[20:08:11.632] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #751)
+[20:08:11.672] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #761)
+[20:08:11.710] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #771)
+[20:08:11.751] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #781)
+[20:08:11.788] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #791)
+[20:08:11.827] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #801)
+[20:08:11.866] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #811)
+[20:08:11.905] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #821)
+[20:08:11.944] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #831)
+[20:08:11.984] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #841)
+[20:08:12.021] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #851)
+[20:08:12.057] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #861)
+[20:08:12.093] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #871)
+[20:08:12.132] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #881)
+[20:08:12.171] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #891)
+[20:08:12.208] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #901)
+[20:08:12.247] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #911)
+[20:08:12.284] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #921)
+[20:08:12.321] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #931)
+[20:08:12.357] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #941)
+[20:08:12.398] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #951)
+[20:08:12.434] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #961)
+[20:08:12.471] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #971)
+[20:08:12.507] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #981)
+[20:08:12.547] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #991)
+[20:08:12.584] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1001)
+[20:08:12.627] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1011)
+[20:08:12.663] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1021)
+[20:08:12.699] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1031)
+[20:08:12.737] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1041)
+[20:08:12.773] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1051)
+[20:08:12.814] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1061)
+[20:08:12.850] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1071)
+[20:08:12.887] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1081)
+[20:08:12.924] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1091)
+[20:08:12.964] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1101)
+[20:08:13.009] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1111)
+[20:08:13.049] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1121)
+[20:08:13.094] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1131)
+[20:08:13.209] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1141)
+[20:08:13.249] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1151)
+[20:08:13.299] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1161)
+[20:08:13.358] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1171)
+[20:08:13.399] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1181)
+[20:08:13.439] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1191)
+[20:08:13.474] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1201)
+[20:08:13.517] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1211)
+[20:08:13.558] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1221)
+[20:08:13.598] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1231)
+[20:08:13.633] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1241)
+[20:08:13.670] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1251)
+[20:08:13.711] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1261)
+[20:08:13.750] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1271)
+[20:08:13.794] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1281)
+[20:08:13.844] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1291)
+[20:08:13.880] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1301)
+[20:08:13.921] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1311)
+[20:08:13.960] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1321)
+[20:08:14.002] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1331)
+[20:08:14.041] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1341)
+[20:08:14.080] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1351)
+[20:08:14.116] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1361)
+[20:08:14.152] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1371)
+[20:08:14.189] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1381)
+[20:08:14.223] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1391)
+[20:08:14.263] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1401)
+[20:08:14.297] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1411)
+[20:08:14.334] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1421)
+[20:08:14.378] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1431)
+[20:08:14.417] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1441)
+[20:08:14.455] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1451)
+[20:08:14.496] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1461)
+[20:08:14.534] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1471)
+[20:08:14.572] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1481)
+[20:08:14.611] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1491)
+[20:08:14.652] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1501)
+[20:08:14.691] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1511)
+[20:08:14.731] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1521)
+[20:08:14.769] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1531)
+[20:08:14.806] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1541)
+[20:08:14.843] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1551)
+[20:08:14.883] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1561)
+[20:08:14.922] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1571)
+[20:08:14.958] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1581)
+[20:08:14.996] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1591)
+[20:08:15.033] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1601)
+[20:08:15.073] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1611)
+[20:08:15.108] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1621)
+[20:08:15.143] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1631)
+[20:08:15.185] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1641)
+[20:08:15.223] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1651)
+[20:08:15.263] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1661)
+[20:08:15.299] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1671)
+[20:08:15.333] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1681)
+[20:08:15.368] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1691)
+[20:08:15.409] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1701)
+[20:08:15.445] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1711)
+[20:08:15.479] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1721)
+[20:08:15.518] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1731)
+[20:08:15.557] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1741)
+[20:08:15.592] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1751)
+[20:08:15.630] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1761)
+[20:08:15.671] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1771)
+[20:08:15.721] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1781)
+[20:08:15.766] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1791)
+[20:08:15.814] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1801)
+[20:08:15.856] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1811)
+[20:08:15.893] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1821)
+[20:08:15.934] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1831)
+[20:08:15.975] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1841)
+[20:08:16.016] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1851)
+[20:08:16.053] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1861)
+[20:08:16.094] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1871)
+[20:08:16.133] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1881)
+[20:08:16.169] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1891)
+[20:08:16.209] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1901)
+[20:08:16.246] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1911)
+[20:08:16.281] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1921)
+[20:08:16.317] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1931)
+[20:08:16.358] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1941)
+[20:08:16.399] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1951)
+[20:08:16.436] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1961)
+[20:08:16.474] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1971)
+[20:08:16.521] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1981)
+[20:08:16.563] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #1991)
+[20:08:16.604] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2001)
+[20:08:16.645] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2011)
+[20:08:16.686] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2021)
+[20:08:16.722] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2031)
+[20:08:16.757] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2041)
+[20:08:16.793] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2051)
+[20:08:16.833] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2061)
+[20:08:16.889] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2071)
+[20:08:16.939] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2081)
+[20:08:16.993] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2091)
+[20:08:17.049] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2101)
+[20:08:17.103] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2111)
+[20:08:17.152] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2121)
+[20:08:17.209] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2131)
+[20:08:17.261] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2141)
+[20:08:17.316] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2151)
+[20:08:17.372] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2161)
+[20:08:17.456] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2171)
+[20:08:17.509] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2181)
+[20:08:17.557] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2191)
+[20:08:17.601] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2201)
+[20:08:17.643] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2211)
+[20:08:17.692] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2221)
+[20:08:17.815] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2231)
+[20:08:17.878] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2241)
+[20:08:17.984] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2251)
+[20:08:18.095] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2261)
+[20:08:18.204] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2271)
+[20:08:18.275] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2281)
+[20:08:18.331] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2291)
+[20:08:18.385] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2301)
+[20:08:18.430] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2311)
+[20:08:18.473] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2321)
+[20:08:18.515] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2331)
+[20:08:18.556] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2341)
+[20:08:18.595] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2351)
+[20:08:18.633] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2361)
+[20:08:18.675] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2371)
+[20:08:18.718] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2381)
+[20:08:18.762] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2391)
+[20:08:18.829] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2401)
+[20:08:18.875] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2411)
+[20:08:18.917] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2421)
+[20:08:18.955] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2431)
+[20:08:18.992] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2441)
+[20:08:19.034] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2451)
+[20:08:19.078] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2461)
+[20:08:19.114] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2471)
+[20:08:19.152] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2481)
+[20:08:19.190] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2491)
+[20:08:19.230] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2501)
+[20:08:19.269] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2511)
+[20:08:19.306] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2521)
+[20:08:19.345] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2531)
+[20:08:19.384] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2541)
+[20:08:19.422] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2551)
+[20:08:19.460] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2561)
+[20:08:19.498] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2571)
+[20:08:19.535] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2581)
+[20:08:19.574] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2591)
+[20:08:19.614] [2026-06-07#002] [PID:10404] [WARNING] [CameraStream        ] Frame read failed (drop #2601)
+[20:08:19.614] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Stop camera button clicked
+[20:08:19.614] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Stopping camera...
+[20:08:19.614] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Stopping camera stream...
+[20:08:19.618] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop exited
+[20:08:19.665] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera stream stopped
+[20:08:19.665] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera stopped OK
+[20:08:20.111] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[20:08:20.111] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Starting camera...
+[20:08:20.111] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Opening camera source=1...
+[20:08:21.213] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera opened OK
+[20:08:21.214] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop running
+[20:08:21.214] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture thread started
+[20:08:21.214] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera FPS: 30.00
+[20:08:21.214] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera started OK
+[20:08:21.530] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.622] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.662] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.702] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.742] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.777] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.813] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.854] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.891] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.927] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:21.966] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.007] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.043] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.078] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.112] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.150] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.198] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.234] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.277] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.318] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.353] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.390] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.411] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #30 received | shape=(480, 640, 3)
+[20:08:22.430] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.478] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.524] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.566] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.603] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.651] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.686] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.726] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.760] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.798] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.838] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.873] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.917] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.958] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:22.995] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.030] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.064] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.099] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.134] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.174] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.212] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.258] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.305] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.340] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.383] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.404] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #60 received | shape=(480, 640, 3)
+[20:08:23.430] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.470] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.508] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.543] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.577] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.614] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.654] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.689] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.724] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.773] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.807] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.846] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.881] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.916] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:23.961] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.007] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.053] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.100] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.135] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.174] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.214] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.254] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.301] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.337] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.375] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.406] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #90 received | shape=(480, 640, 3)
+[20:08:24.409] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.444] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.479] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.514] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.549] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.590] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.627] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.662] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.702] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.737] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.774] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.813] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.854] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.892] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.927] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:24.966] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.001] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.049] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.094] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.134] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.168] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.205] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.246] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.281] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.318] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.358] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.393] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.397] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #120 received | shape=(480, 640, 3)
+[20:08:25.438] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.484] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.519] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.562] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.597] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.641] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.688] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.723] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.758] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.798] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.838] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.878] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.918] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.955] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:25.990] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.024] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.064] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.110] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.145] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.182] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.217] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.265] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.310] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.344] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.390] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.395] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #150 received | shape=(480, 640, 3)
+[20:08:26.435] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.478] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.514] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.549] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.590] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.630] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.665] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.700] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.742] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.777] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.822] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.872] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.918] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:26.965] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.006] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.044] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.079] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.122] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.168] [2026-06-07#002] [PID:10404] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:08:27.383] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #180 received | shape=(480, 640, 3)
+[20:08:28.410] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #210 received | shape=(480, 640, 3)
+[20:08:29.403] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #240 received | shape=(480, 640, 3)
+[20:08:30.400] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #270 received | shape=(480, 640, 3)
+[20:08:31.401] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #300 received | shape=(480, 640, 3)
+[20:08:31.615] [2026-06-07#002] [PID:10404] [INFO   ] [ESP32Controller     ] [UI] Test model button clicked
+[20:08:31.615] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorService     ] Testing model on ESP32...
+[20:08:31.615] [2026-06-07#002] [PID:10404] [DEBUG  ] [Motor               ] Testing model
+[20:08:31.615] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorService     ] Model test SUCCESS
+[20:08:32.492] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #330 received | shape=(480, 640, 3)
+[20:08:33.518] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #360 received | shape=(480, 640, 3)
+[20:08:33.626] [2026-06-07#002] [PID:10404] [DEBUG  ] [YOLODetector        ] detect() → [W-Square(0.85), W-Circle(0.83), W-CPolygon(0.79), R-Circle(0.77), W-S-Circle(0.74), W-S-Circle(0.73), R-Circle(0.73), R-Trapezoid(0.72), W-Circle(0.71), W-CPolygon(0.70), R-Trapezoid(0.68), W-Circle(0.67), R-Circle(0.63), R-Circle(0.60), W-CPolygon(0.58), W-S-Circle(0.57), R-CPolygon(0.56), W-CPolygon(0.45), R-S-Circle(0.45), W-S-Circle(0.38), W-S-Circle(0.34), W-S-Circle(0.31), W-S-Circle(0.29)]
+[20:08:33.627] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(245.88014), np.float32(128.1695))
+[20:08:33.627] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[20:08:33.627] [2026-06-07#002] [PID:10404] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[20:08:33.627] [2026-06-07#002] [PID:10404] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[20:08:34.486] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #390 received | shape=(480, 640, 3)
+[20:08:35.765] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #420 received | shape=(480, 640, 3)
+[20:08:36.641] [2026-06-07#002] [PID:10404] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x20675d42cf0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[20:08:36.642] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP2] Frame captured và gửi sang Inspection Worker thành công[cite: 23].
+[20:08:36.642] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[20:08:36.643] [2026-06-07#002] [PID:10404] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[20:08:36.655] [2026-06-07#002] [PID:10404] [ERROR  ] [ConveyorUseCase     ] Lỗi trong quá trình xử lý ngầm: 'BuildSahiModel' object has no attribute 'perform_inference'
+[20:08:37.509] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #450 received | shape=(480, 640, 3)
+[20:08:39.271] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #480 received | shape=(480, 640, 3)
+[20:08:41.018] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #510 received | shape=(480, 640, 3)
+[20:08:42.776] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #540 received | shape=(480, 640, 3)
+[20:08:43.933] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #570 received | shape=(480, 640, 3)
+[20:08:44.924] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #600 received | shape=(480, 640, 3)
+[20:08:45.921] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #630 received | shape=(480, 640, 3)
+[20:08:46.911] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #660 received | shape=(480, 640, 3)
+[20:08:47.914] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #690 received | shape=(480, 640, 3)
+[20:08:48.905] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #720 received | shape=(480, 640, 3)
+[20:08:49.895] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #750 received | shape=(480, 640, 3)
+[20:08:51.300] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #780 received | shape=(480, 640, 3)
+[20:08:52.236] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Stop camera button clicked
+[20:08:52.236] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Stopping camera...
+[20:08:52.236] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Stopping camera stream...
+[20:08:52.269] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop exited
+[20:08:52.559] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera stream stopped
+[20:08:52.559] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera stopped OK
+[20:08:53.367] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[20:08:53.368] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Starting camera...
+[20:08:53.368] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Opening camera source=1...
+[20:08:54.423] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera opened OK
+[20:08:54.424] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop running
+[20:08:54.424] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture thread started
+[20:08:54.424] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera FPS: 30.00
+[20:08:54.425] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera started OK
+[20:08:54.689] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #810 received | shape=(480, 640, 3)
+[20:08:55.649] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #840 received | shape=(480, 640, 3)
+[20:08:56.639] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #870 received | shape=(480, 640, 3)
+[20:08:57.633] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #900 received | shape=(480, 640, 3)
+[20:08:58.627] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #930 received | shape=(480, 640, 3)
+[20:08:59.628] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #960 received | shape=(480, 640, 3)
+[20:09:00.781] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #990 received | shape=(480, 640, 3)
+[20:09:02.555] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1020 received | shape=(480, 640, 3)
+[20:09:03.761] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1050 received | shape=(480, 640, 3)
+[20:09:04.281] [2026-06-07#002] [PID:10404] [INFO   ] [ESP32Controller     ] [UI] Test model button clicked
+[20:09:04.281] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorService     ] Testing model on ESP32...
+[20:09:04.281] [2026-06-07#002] [PID:10404] [DEBUG  ] [Motor               ] Testing model
+[20:09:04.281] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorService     ] Model test SUCCESS
+[20:09:04.552] [2026-06-07#002] [PID:10404] [DEBUG  ] [YOLODetector        ] detect() → [W-Circle(0.83), W-CPolygon(0.81), W-Circle(0.74), W-Square(0.72), R-CPolygon(0.68), R-Trapezoid(0.63), R-Trapezoid(0.59), R-Circle(0.53), W-CPolygon(0.53), W-CPolygon(0.51), W-S-Circle(0.51), R-CPolygon(0.48), W-S-Circle(0.45), W-S-Circle(0.30)]
+[20:09:04.552] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(249.9891), np.float32(176.65942))
+[20:09:04.552] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[20:09:04.552] [2026-06-07#002] [PID:10404] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[20:09:04.553] [2026-06-07#002] [PID:10404] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[20:09:04.752] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1080 received | shape=(480, 640, 3)
+[20:09:05.744] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1110 received | shape=(480, 640, 3)
+[20:09:06.745] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1140 received | shape=(480, 640, 3)
+[20:09:07.564] [2026-06-07#002] [PID:10404] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x2067787c190>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[20:09:07.564] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP2] Frame captured và gửi sang Inspection Worker thành công[cite: 23].
+[20:09:07.564] [2026-06-07#002] [PID:10404] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[20:09:07.565] [2026-06-07#002] [PID:10404] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[20:09:07.567] [2026-06-07#002] [PID:10404] [ERROR  ] [ConveyorUseCase     ] Lỗi trong quá trình xử lý ngầm: 'BuildSahiModel' object has no attribute 'perform_inference'
+[20:09:07.735] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1170 received | shape=(480, 640, 3)
+[20:09:09.429] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraService       ] Frame #1200 received | shape=(480, 640, 3)
+[20:09:10.512] [2026-06-07#002] [PID:10404] [INFO   ] [CameraController    ] [UI] Stop camera button clicked
+[20:09:10.513] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Stopping camera...
+[20:09:10.513] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Stopping camera stream...
+[20:09:10.533] [2026-06-07#002] [PID:10404] [DEBUG  ] [CameraStream        ] Capture loop exited
+[20:09:10.846] [2026-06-07#002] [PID:10404] [INFO   ] [CameraStream        ] Camera stream stopped
+[20:09:10.846] [2026-06-07#002] [PID:10404] [INFO   ] [CameraService       ] Camera stopped OK

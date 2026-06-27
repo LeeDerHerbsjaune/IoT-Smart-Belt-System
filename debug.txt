@@ -1,0 +1,18 @@
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\53lov\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 2093, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\53lov\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 876, in callit
+    func(*args, **kw)
+    ~~~~^^^^^^^^^^^^^
+  File "d:\Project\Python\NCKH\Belt\Belt2\presentation\gui.py", line 334, in start_ui_loop
+    self.update_frame()
+    ~~~~~~~~~~~~~~~~~^^
+  File "d:\Project\Python\NCKH\Belt\Belt2\presentation\gui.py", line 354, in update_frame
+    self.usecase.process(frame=frame, polygon=polygon)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Project\Python\NCKH\Belt\Belt2\application\use_cases\conveyor_usecase.py", line 24, in process
+    inside = PointPolygon.point_in_polygon(center, polygon)
+TypeError: PointPolygon.point_in_polygon() missing 1 required positional argument: 'polygon'
+[Controller] Stop motor

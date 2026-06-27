@@ -1,0 +1,22 @@
+[14:20:57.296] [2026-06-06#021] [PID:37848] [INFO   ] [CameraController    ] ============================================================
+[14:20:57.296] [2026-06-06#021] [PID:37848] [INFO   ] [CameraController    ] SESSION START  run=2026-06-06#021  pid=37848
+[14:20:57.296] [2026-06-06#021] [PID:37848] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-06_run021.log
+[14:20:57.296] [2026-06-06#021] [PID:37848] [INFO   ] [CameraController    ] ============================================================
+[14:21:02.528] [2026-06-06#021] [PID:37848] [DEBUG  ] [CameraStream        ] CameraStream created | source=0
+[14:21:02.529] [2026-06-06#021] [PID:37848] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[14:21:02.535] [2026-06-06#021] [PID:37848] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[14:21:02.535] [2026-06-06#021] [PID:37848] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[14:21:02.535] [2026-06-06#021] [PID:37848] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[14:21:02.685] [2026-06-06#021] [PID:37848] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[14:21:02.685] [2026-06-06#021] [PID:37848] [DEBUG  ] [CameraService       ] CameraService initialized
+[14:21:02.685] [2026-06-06#021] [PID:37848] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[14:21:02.685] [2026-06-06#021] [PID:37848] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized
+[14:21:02.685] [2026-06-06#021] [PID:37848] [DEBUG  ] [CameraController    ] CameraController initialized
+[14:21:02.685] [2026-06-06#021] [PID:37848] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized
+[14:21:04.307] [2026-06-06#021] [PID:37848] [INFO   ] [ESP32Controller     ] [UI] Test model button clicked
+[14:21:04.307] [2026-06-06#021] [PID:37848] [INFO   ] [ConveyorService     ] Testing model on ESP32...
+[14:21:04.307] [2026-06-06#021] [PID:37848] [DEBUG  ] [Motor               ] Testing model
+[14:21:04.307] [2026-06-06#021] [PID:37848] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/testModel
+[14:21:07.325] [2026-06-06#021] [PID:37848] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/testModel | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /testModel (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x126374f1940>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[14:21:07.325] [2026-06-06#021] [PID:37848] [DEBUG  ] [Motor               ] Model test result: FAIL
+[14:21:07.325] [2026-06-06#021] [PID:37848] [ERROR  ] [ConveyorService     ] Model test FAILED

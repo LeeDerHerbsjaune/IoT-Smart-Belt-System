@@ -1,0 +1,172 @@
+[20:13:55.872] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] ============================================================
+[20:13:55.873] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] SESSION START  run=2026-06-07#003  pid=26356
+[20:13:55.873] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-07_run003.log
+[20:13:55.873] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] ============================================================
+[20:14:00.235] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraStream        ] CameraStream created | source=0
+[20:14:00.235] [2026-06-07#003] [PID:26356] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[20:14:00.242] [2026-06-07#003] [PID:26356] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[20:14:00.242] [2026-06-07#003] [PID:26356] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[20:14:00.242] [2026-06-07#003] [PID:26356] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[20:14:00.379] [2026-06-07#003] [PID:26356] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[20:14:00.379] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] CameraService initialized
+[20:14:00.379] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[20:14:00.380] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized với Async Inspection Worker
+[20:14:00.380] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraController    ] CameraController initialized
+[20:14:00.380] [2026-06-07#003] [PID:26356] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized
+[20:14:04.713] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[20:14:04.713] [2026-06-07#003] [PID:26356] [INFO   ] [CameraService       ] Starting camera...
+[20:14:04.713] [2026-06-07#003] [PID:26356] [INFO   ] [CameraStream        ] Opening camera source=1...
+[20:14:06.108] [2026-06-07#003] [PID:26356] [INFO   ] [CameraStream        ] Camera opened OK
+[20:14:06.109] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraStream        ] Capture loop running
+[20:14:06.109] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraStream        ] Capture thread started
+[20:14:06.109] [2026-06-07#003] [PID:26356] [INFO   ] [CameraStream        ] Camera FPS: 30.00
+[20:14:06.110] [2026-06-07#003] [PID:26356] [INFO   ] [CameraService       ] Camera started OK
+[20:14:06.436] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.482] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.531] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.578] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.625] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.660] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.705] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.751] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.799] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.846] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.894] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.939] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:06.985] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.021] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.063] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.110] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.157] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.205] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.242] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.282] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.329] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.351] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #30 received | shape=(480, 640, 3)
+[20:14:07.365] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.406] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.454] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.488] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.531] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.578] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.624] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.659] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.702] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.748] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.794] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.829] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.873] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.912] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.952] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:07.992] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.027] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.075] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.123] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.157] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.192] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.232] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.268] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.304] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.339] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.341] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #60 received | shape=(480, 640, 3)
+[20:14:08.376] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.416] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.453] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.498] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.533] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.575] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.616] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.650] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.688] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.728] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.768] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.803] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.839] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.886] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.921] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.960] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:08.996] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.031] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.072] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.112] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.147] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.183] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.224] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.259] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.304] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.335] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #90 received | shape=(480, 640, 3)
+[20:14:09.353] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.400] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.436] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.471] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.511] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.557] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.603] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.640] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.680] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.720] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.758] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.806] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.853] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.901] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.935] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:09.979] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.026] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.071] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.118] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.166] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.208] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.245] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.288] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.323] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.327] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #120 received | shape=(480, 640, 3)
+[20:14:10.360] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.402] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.440] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.480] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.520] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.558] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.605] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.651] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.686] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.728] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.776] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.824] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.860] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.901] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.947] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:10.981] [2026-06-07#003] [PID:26356] [DEBUG  ] [ConveyorUseCase     ] process() skipped — polygon not set yet
+[20:14:11.359] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #150 received | shape=(480, 640, 3)
+[20:14:12.351] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #180 received | shape=(480, 640, 3)
+[20:14:13.345] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #210 received | shape=(480, 640, 3)
+[20:14:14.336] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #240 received | shape=(480, 640, 3)
+[20:14:15.336] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #270 received | shape=(480, 640, 3)
+[20:14:16.326] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #300 received | shape=(480, 640, 3)
+[20:14:17.041] [2026-06-07#003] [PID:26356] [INFO   ] [ESP32Controller     ] [UI] Test model button clicked
+[20:14:17.041] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorService     ] Testing model on ESP32...
+[20:14:17.041] [2026-06-07#003] [PID:26356] [DEBUG  ] [Motor               ] Testing model
+[20:14:17.041] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorService     ] Model test SUCCESS
+[20:14:17.375] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #330 received | shape=(480, 640, 3)
+[20:14:18.198] [2026-06-07#003] [PID:26356] [DEBUG  ] [YOLODetector        ] detect() → [W-Circle(0.85), W-Circle(0.84), W-Square(0.83), R-CPolygon(0.81), W-S-Circle(0.76), W-S-Circle(0.75), R-Circle(0.74), W-CPolygon(0.74), R-CPolygon(0.74), R-Trapezoid(0.74), W-S-Circle(0.73), W-CPolygon(0.69), W-Trapezoid(0.67), W-Circle(0.66), R-S-Circle(0.62), R-Circle(0.57), W-S-Circle(0.55), R-Circle(0.51), W-S-Circle(0.50), W-S-Circle(0.43), R-Trapezoid(0.37), R-S-Circle(0.37), W-Circle(0.29), R-Circle(0.27), R-Circle(0.26)]
+[20:14:18.198] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorUseCase     ] [STEP1] Target found: W-Square @ (np.float32(357.5002), np.float32(227.98666))
+[20:14:18.198] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorUseCase     ] [STEP2] Stopping conveyor for inspection...
+[20:14:18.199] [2026-06-07#003] [PID:26356] [INFO   ] [Motor               ] Motor → STOP (state=0)
+[20:14:18.199] [2026-06-07#003] [PID:26356] [DEBUG  ] [ESP32Client         ] HTTP GET → http://192.168.1.100/motorControl?state=0
+[20:14:18.367] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #360 received | shape=(480, 640, 3)
+[20:14:19.359] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #390 received | shape=(480, 640, 3)
+[20:14:20.333] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #420 received | shape=(480, 640, 3)
+[20:14:21.206] [2026-06-07#003] [PID:26356] [ERROR  ] [ESP32Client         ] HTTP FAILED ← http://192.168.1.100/motorControl?state=0 | HTTPConnectionPool(host='192.168.1.100', port=80): Max retries exceeded with url: /motorControl?state=0 (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.1.100', port=80) at 0x1ec8d712cf0>, 'Connection to 192.168.1.100 timed out. (connect timeout=3)'))
+[20:14:21.206] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorUseCase     ] [STEP2] Frame captured và gửi sang Inspection Worker thành công[cite: 23].
+[20:14:21.207] [2026-06-07#003] [PID:26356] [INFO   ] [ConveyorUseCase     ] [STEP3] Running SAHI detection on captured frame...
+[20:14:21.207] [2026-06-07#003] [PID:26356] [INFO   ] [SahiDetector        ] SAHI sliced prediction | image shape=(480, 640, 3)
+[20:14:21.211] [2026-06-07#003] [PID:26356] [ERROR  ] [ConveyorUseCase     ] Lỗi trong quá trình xử lý ngầm: 'BuildSahiModel' object has no attribute 'perform_inference'
+[20:14:21.332] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #450 received | shape=(480, 640, 3)
+[20:14:22.327] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #480 received | shape=(480, 640, 3)
+[20:14:23.373] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #510 received | shape=(480, 640, 3)
+[20:14:24.367] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraService       ] Frame #540 received | shape=(480, 640, 3)
+[20:14:25.097] [2026-06-07#003] [PID:26356] [INFO   ] [CameraController    ] [UI] Stop camera button clicked
+[20:14:25.098] [2026-06-07#003] [PID:26356] [INFO   ] [CameraService       ] Stopping camera...
+[20:14:25.098] [2026-06-07#003] [PID:26356] [INFO   ] [CameraStream        ] Stopping camera stream...
+[20:14:25.119] [2026-06-07#003] [PID:26356] [DEBUG  ] [CameraStream        ] Capture loop exited
+[20:14:25.411] [2026-06-07#003] [PID:26356] [INFO   ] [CameraStream        ] Camera stream stopped
+[20:14:25.411] [2026-06-07#003] [PID:26356] [INFO   ] [CameraService       ] Camera stopped OK

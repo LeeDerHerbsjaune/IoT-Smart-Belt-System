@@ -1,0 +1,19 @@
+[12:23:23.370] [2026-06-06#010] [PID:25224] [INFO   ] [CameraController    ] ============================================================
+[12:23:23.370] [2026-06-06#010] [PID:25224] [INFO   ] [CameraController    ] SESSION START  run=2026-06-06#010  pid=25224
+[12:23:23.370] [2026-06-06#010] [PID:25224] [INFO   ] [CameraController    ] Log file → d:\Project\Python\NCKH\Belt\Belt2\logs\2026-06-06_run010.log
+[12:23:23.371] [2026-06-06#010] [PID:25224] [INFO   ] [CameraController    ] ============================================================
+[12:23:27.916] [2026-06-06#010] [PID:25224] [DEBUG  ] [CameraStream        ] CameraStream created | source=0
+[12:23:27.916] [2026-06-06#010] [PID:25224] [DEBUG  ] [ESP32Client         ] ESP32Client created | ip=192.168.1.100 | timeout=3s
+[12:23:27.922] [2026-06-06#010] [PID:25224] [DEBUG  ] [SahiModel           ] BuildSahiModel created
+[12:23:27.923] [2026-06-06#010] [PID:25224] [DEBUG  ] [SahiDetector        ] SahiDetector initialized
+[12:23:27.923] [2026-06-06#010] [PID:25224] [INFO   ] [YOLODetector        ] Loading YOLO model from D:\Project\Model\Weights\bangChuyen\best1.pt...
+[12:23:28.087] [2026-06-06#010] [PID:25224] [INFO   ] [YOLODetector        ] YOLO model loaded OK
+[12:23:28.087] [2026-06-06#010] [PID:25224] [DEBUG  ] [CameraService       ] CameraService initialized
+[12:23:28.087] [2026-06-06#010] [PID:25224] [DEBUG  ] [ConveyorService     ] ConveyorService initialized
+[12:23:28.087] [2026-06-06#010] [PID:25224] [DEBUG  ] [ConveyorUseCase     ] ConveyorUseCase initialized
+[12:23:28.087] [2026-06-06#010] [PID:25224] [DEBUG  ] [CameraController    ] CameraController initialized
+[12:23:28.087] [2026-06-06#010] [PID:25224] [DEBUG  ] [ESP32Controller     ] ESP32Controller initialized
+[12:23:31.242] [2026-06-06#010] [PID:25224] [INFO   ] [CameraController    ] [UI] Start camera button clicked
+[12:23:31.242] [2026-06-06#010] [PID:25224] [INFO   ] [CameraService       ] Starting camera...
+[12:23:31.242] [2026-06-06#010] [PID:25224] [INFO   ] [CameraStream        ] Opening camera source=0...
+[12:23:31.265] [2026-06-06#010] [PID:25224] [ERROR  ] [CameraStream        ] Cannot open camera source=

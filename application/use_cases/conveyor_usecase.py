@@ -5,12 +5,17 @@ import threading
 from ultils.geometry import PointPolygon
 from ultils.log import get_logger
 
-from domain.domain.rules import (
+from domain.domain.rules import (        # FIX: bỏ domain lặp (domain.domain.rules → domain.rules)
     ProductInspector,
     PositionalVotingRule,
 )
 
-from ultils.config.constants import STEP_MOVE_TIME
+from ultils.config.constants import (
+    STEP_MOVE_TIME,
+    POSITION_VOTING_FRAMES,
+    POSITION_ERR_X,
+    POSITION_ERR_Y,
+)
 
 log = get_logger("ConveyorUseCase")
 
@@ -26,7 +31,13 @@ class ConveyorUseCase:
         self.motor = motor
         self.servo = servo
 
-        self.rule = PositionalVotingRule()
+        # FIX: truyền constants vào rule thay vì hardcode trong PositionalVotingRule
+        self.rule = PositionalVotingRule(
+            n_frames=POSITION_VOTING_FRAMES,
+            err_x=POSITION_ERR_X,
+            err_y=POSITION_ERR_Y,
+        )
+
         self.inspection_queue = queue.Queue(maxsize=1)
 
         self.worker = threading.Thread(
@@ -35,8 +46,12 @@ class ConveyorUseCase:
         )
         self.worker.start()
 
-    #########################################################
+    # ------------------------------------------------------------------
     def process(self, frame, polygon):
+        """
+        Được gọi liên tục từ main loop.
+        Khi phát hiện Square trong vùng polygon → dừng băng tải và trigger kiểm tra.
+        """
         if frame is None:
             return
         if len(polygon) < 4:
@@ -73,8 +88,9 @@ class ConveyorUseCase:
         except queue.Full:
             log.warning("Inspection queue đầy — bỏ qua trigger này")
 
-    #########################################################
+    # ------------------------------------------------------------------
     def _inspection_worker(self):
+        """Worker thread — chạy liên tục, nhận signal từ queue."""
         while True:
             try:
                 self.inspection_queue.get(timeout=1)
@@ -87,8 +103,16 @@ class ConveyorUseCase:
                 log.exception(ex)
                 self._safe_recover()
 
-    #########################################################
+    # ------------------------------------------------------------------
     def _run_inspection_cycle(self):
+        """
+        Chu kỳ kiểm tra chính:
+          1. Chạy băng tải từng bước nhỏ (STEP_MOVE_TIME)
+          2. YOLO detect → xác nhận Square còn trong frame (làm anchor)
+          3. SAHI detect toàn bộ frame → lấy tất cả sản phẩm
+          4. Voting qua n_frames
+          5. Evaluate → servo push nếu FAIL
+        """
         retry = 0
 
         while self.rule.frame_count < self.rule.n_frames:
@@ -101,11 +125,12 @@ class ConveyorUseCase:
                 self._safe_recover()
                 return
 
+            # Bước băng tải nhỏ (bỏ qua ở frame đầu tiên)
             if self.rule.frame_count > 0:
                 self.motor.start_conveyor()
                 time.sleep(STEP_MOVE_TIME)
                 self.motor.stop_conveyor()
-                time.sleep(0.08)
+                time.sleep(0.08)   # chờ rung tắt
 
             frame = self.state.current_frame
             if frame is None:
@@ -115,66 +140,63 @@ class ConveyorUseCase:
                 continue
 
             frame = frame.copy()
-            yolo_products = self.yolo.detect(frame)
 
+            # Bước 1: YOLO detect nhanh — chỉ để xác nhận Square còn anchor trong frame
+            yolo_products = self.yolo.detect(frame)
             square = next(
                 (p for p in yolo_products if ProductInspector.is_trigger_square(p)),
                 None,
             )
 
             if square is None:
-                log.warning(f"Không tìm thấy Square ở frame này (retry {retry+1}/{MAX_SQUARE_RETRY})")
+                log.warning(
+                    f"Không tìm thấy Square ở frame này (retry {retry + 1}/{MAX_SQUARE_RETRY})"
+                )
                 retry += 1
                 continue
 
-            retry = 0  # reset khi tìm lại được anchor
+            retry = 0   # reset khi tìm lại được anchor
 
-            x1, y1, x2, y2 = map(int, square.bbox)
+            # Bước 2: SAHI detect toàn bộ frame để lấy đủ tất cả sản phẩm (kể cả nhỏ)
+            sahi_products = self.sahi.detect(frame)
 
-            # pad thêm margin quanh bbox để SAHI không bị crop hụt các slot lân cận
-            pad = 30
-            h, w = frame.shape[:2]
-            x1, y1 = max(0, x1 - pad), max(0, y1 - pad)
-            x2, y2 = min(w, x2 + pad), min(h, y2 + pad)
-
-            roi = frame[y1:y2, x1:x2]
-            sahi_products = self.sahi.detect(roi)
-
-            ok = self.rule.add_frame(sahi_products)
-            if not ok:
-                log.warning("Frame bị bỏ qua do add_frame() không hợp lệ")
-                continue
+            self.rule.add_frame(sahi_products)
 
             log.info(f"Frame {self.rule.frame_count}/{self.rule.n_frames}")
 
+        # --- Evaluate ---
         passed, detail = self.rule.evaluate()
 
         for item in detail:
             log.info(item)
 
         if passed:
-            log.info("PASS")
+            log.info("✅ PASS")
             self.state.triggered = False
         else:
-            log.warning("FAIL")
+            log.warning("❌ FAIL")
             self.state.triggered = True
 
         self.state.pred_done = True
 
+        # Servo đẩy sản phẩm lỗi ra
         if self.state.triggered:
             self.servo.push()
             time.sleep(0.2)
             self.servo.Pulling_out()
             time.sleep(0.2)
 
+        # Khởi động lại băng tải
         self.motor.start_conveyor()
         self.state.conveyor_running = True
         self.state.action_done = True
 
-    #########################################################
+    # ------------------------------------------------------------------
     def _safe_recover(self):
-        """Đảm bảo conveyor luôn được khởi động lại dù có lỗi/timeout,
-        tránh kẹt băng tải vô hạn."""
+        """
+        Đảm bảo conveyor luôn được khởi động lại dù có lỗi/timeout,
+        tránh kẹt băng tải vô hạn.
+        """
         try:
             self.motor.start_conveyor()
         except Exception:

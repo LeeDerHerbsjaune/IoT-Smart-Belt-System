@@ -87,32 +87,6 @@ class GUI:
 
         self.stop_camera_btn.pack(side=tk.LEFT, padx=5)
         #=====================================================================================================
-        # Select Area =====================================================
-        #=====================================================================================================
-        self.arena_selector = AreaSelector(self.camera_canvas, self.state)
-        self.select_btn = tk.Button(
-            self.root,
-            text="Set Area",
-            command= self.arena_selector.start,
-            bg="#686a69",
-            fg="white",
-            padx=10,
-            pady=5
-        )
-        self.select_btn.pack(side=tk.LEFT, padx=5)
-
-        self.clear_btn = tk.Button(
-            camera_controls,
-            text="Clear Area",
-            command=self.arena_selector.clear,
-            bg="#7d7d7d",
-            fg="white",
-            padx=10,
-            pady=5
-        )
-
-        self.clear_btn.pack(side=tk.LEFT, padx=5)
-        #=====================================================================================================
         # Conveyor Controls =====================================================
         #=====================================================================================================
 
@@ -194,6 +168,50 @@ class GUI:
         )
 
         self.disconnect_btn.pack(side=tk.LEFT, padx=5, pady=5)
+
+        # Area Selection Section (chuyển từ left_panel sang đây)
+
+        area_frame = tk.LabelFrame(
+            right_panel,
+            text="Set Arena"
+        )
+
+        area_frame.pack(fill=tk.X, padx=10, pady=10)
+
+        self.arena_selector = AreaSelector(
+            self.camera_canvas,
+            self.state,
+            control_parent=area_frame,
+            canvas_width=800,
+            canvas_height=500
+        )
+        self.arena_selector.pack_controls(fill=tk.X, padx=5, pady=5)
+
+        area_buttons = tk.Frame(area_frame)
+        area_buttons.pack(fill=tk.X, padx=5, pady=5)
+
+        self.select_btn = tk.Button(
+            area_buttons,
+            text="Set Area",
+            command=self.arena_selector.start,
+            bg="#686a69",
+            fg="white",
+            padx=10,
+            pady=5
+        )
+        self.select_btn.pack(side=tk.LEFT, padx=5)
+
+        self.clear_btn = tk.Button(
+            area_buttons,
+            text="Clear Area",
+            command=self.arena_selector.clear,
+            bg="#7d7d7d",
+            fg="white",
+            padx=10,
+            pady=5
+        )
+
+        self.clear_btn.pack(side=tk.LEFT, padx=5)
 
         # Status
 
@@ -399,7 +417,7 @@ class GUI:
             )
 
             self.setting_area_label.config(
-                text="Bi sex"
+                text="Arena: Set"
             )
         else:
             self.select_btn.config(
@@ -411,5 +429,5 @@ class GUI:
             )
 
             self.setting_area_label.config(
-                text="Don ki bi sex"
+                text="Arena: Not set"
             )

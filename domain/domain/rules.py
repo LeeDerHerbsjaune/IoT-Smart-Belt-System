@@ -1,4 +1,4 @@
-from domain.entities import Slot
+from domain.domain.entities import Slot
 from ultils.config.constants import SQUARE_PRODUCTS, RIGHT_PRODUCTS
 
 

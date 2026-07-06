@@ -1,15 +1,84 @@
+import tkinter as tk
+
 
 class AreaSelector:
+    """
+    Phiên bản dùng thanh trượt (Scale) để chỉnh vùng chọn (hình chữ nhật)
+    thay vì click 4 điểm trên canvas.
 
-    def __init__(self, canvas, state):
+    Vẫn giữ API tương thích với bản cũ:
+        - start()
+        - clear()
+        - polygon (property, trả về list 4 điểm góc)
+        - contains(point)
+        - state.is_setting / state.beset
+    """
+
+    def __init__(self, canvas, state, control_parent=None,
+                 canvas_width=None, canvas_height=None):
 
         self.canvas = canvas
-
-        self.points = []
-
         self.state = state
 
-        self.canvas.bind("<Button-1>", self.on_click)
+        # Nếu không truyền parent riêng cho thanh trượt thì đặt cùng canvas
+        self.control_parent = control_parent or canvas.master
+
+        # Kích thước canvas để giới hạn thanh trượt
+        self.canvas_width = canvas_width or int(canvas["width"])
+        self.canvas_height = canvas_height or int(canvas["height"])
+
+        # Biến lưu vị trí & kích thước vùng chọn (hình vuông)
+        self.var_x = tk.IntVar(value=50)
+        self.var_y = tk.IntVar(value=50)
+        self.var_size = tk.IntVar(value=150)
+
+        self.sliders = []
+        self._build_sliders()
+
+        # Mặc định khoá sliders cho tới khi bấm "Set Area"
+        self.set_sliders_enabled(False)
+
+    # ==========================================
+    # TẠO THANH TRƯỢT
+    # ==========================================
+
+    def _build_sliders(self):
+
+        self.frame = tk.Frame(self.control_parent)
+
+        def make_slider(label, var, max_value):
+            row = tk.Frame(self.frame)
+            row.pack(fill="x", pady=2)
+
+            tk.Label(row, text=label, width=8, anchor="w").pack(side="left")
+
+            slider = tk.Scale(
+                row,
+                from_=0,
+                to=max_value,
+                orient="horizontal",
+                variable=var,
+                command=lambda _=None: self.redraw(),
+            )
+            slider.pack(side="left", fill="x", expand=True)
+            self.sliders.append(slider)
+            return slider
+
+        max_size = min(self.canvas_width, self.canvas_height)
+
+        make_slider("X", self.var_x, self.canvas_width)
+        make_slider("Y", self.var_y, self.canvas_height)
+        make_slider("Size", self.var_size, max_size)
+
+    def pack_controls(self, **kwargs):
+        """Gọi hàm này để hiển thị panel thanh trượt (giống .pack() bình thường)."""
+        self.frame.pack(**kwargs)
+
+    def set_sliders_enabled(self, enabled):
+        """Bật/tắt khả năng kéo cả 3 thanh trượt."""
+        state = tk.NORMAL if enabled else tk.DISABLED
+        for slider in self.sliders:
+            slider.config(state=state)
 
     # ==========================================
     # START
@@ -17,66 +86,47 @@ class AreaSelector:
 
     def start(self):
 
-        self.clear()
-
         self.state.is_setting = True
-
-        print("Click 4 points")
+        self.set_sliders_enabled(True)
+        self.redraw()
+        print("Kéo thanh trượt để chỉnh vùng chọn")
 
     # ==========================================
-    # CLICK EVENT
+    # VẼ LẠI VÙNG CHỌN
     # ==========================================
 
-    def on_click(self, event):
+    def redraw(self):
 
         if not self.state.is_setting:
             return
 
-        if len(self.points) >= 4:
-            return
+        self.canvas.delete("point")
+        self.canvas.delete("polygon")
 
-        x = event.x
-        y = event.y
+        x1, y1, x2, y2 = self._get_bounds()
 
-        self.points.append((x, y))
+        self.canvas.create_rectangle(
+            x1, y1, x2, y2,
+            outline="green",
+            width=2,
+            tags="polygon"
+        )
 
-        self.draw_point(x, y, len(self.points))
+        for i, (px, py) in enumerate(self.polygon, start=1):
+            self.draw_point(px, py, i)
 
-        # draw line
-        if len(self.points) > 1:
+        self.state.beset = True
 
-            x1, y1 = self.points[-2]
-            x2, y2 = self.points[-1]
-
-            self.canvas.create_line(
-                x1, y1,
-                x2, y2,
-                fill="green",
-                width=2,
-                tags="polygon"
-            )
-
-        # close polygon
-        if len(self.points) == 4:
-
-            x1, y1 = self.points[-1]
-            x2, y2 = self.points[0]
-
-            self.canvas.create_line(
-                x1, y1,
-                x2, y2,
-                fill="green",
-                width=2,
-                tags="polygon"
-            )
-
-            self.state.is_setting = False
-            self.state.beset = True
-            print("Polygon completed")
-            
+    def _get_bounds(self):
+        x1 = self.var_x.get()
+        y1 = self.var_y.get()
+        size = self.var_size.get()
+        x2 = x1 + size
+        y2 = y1 + size
+        return x1, y1, x2, y2
 
     # ==========================================
-    # DRAW POINT
+    # VẼ ĐIỂM (giữ để tương thích, đánh dấu 4 góc)
     # ==========================================
 
     def draw_point(self, x, y, index):
@@ -84,8 +134,8 @@ class AreaSelector:
         r = 5
 
         self.canvas.create_oval(
-            x-r, y-r,
-            x+r, y+r,
+            x - r, y - r,
+            x + r, y + r,
             fill="red",
             outline="white",
             width=2,
@@ -93,8 +143,8 @@ class AreaSelector:
         )
 
         self.canvas.create_text(
-            x+10,
-            y-10,
+            x + 10,
+            y - 10,
             text=str(index),
             fill="yellow",
             font=("Arial", 10, "bold"),
@@ -107,65 +157,40 @@ class AreaSelector:
 
     def clear(self):
 
-        self.points = []
-
         self.state.is_setting = False
+        self.state.beset = False
+
+        self.set_sliders_enabled(False)
 
         self.canvas.delete("point")
         self.canvas.delete("polygon")
-        self.state.beset = False
 
     # ==========================================
-    # GET POLYGON
+    # GET POLYGON (4 góc hình chữ nhật, theo chiều kim đồng hồ)
     # ==========================================
 
     @property
     def polygon(self):
 
-        return self.points
+        x1, y1, x2, y2 = self._get_bounds()
+
+        return [
+            (x1, y1),
+            (x2, y1),
+            (x2, y2),
+            (x1, y2),
+        ]
 
     # ==========================================
-    # CHECK POINT INSIDE
+    # CHECK POINT INSIDE (đơn giản hoá vì là hình chữ nhật)
     # ==========================================
 
     def contains(self, point):
 
-        if len(self.points) < 4:
+        if self.var_size.get() <= 0:
             return False
 
         x, y = point
+        x1, y1, x2, y2 = self._get_bounds()
 
-        polygon = self.points
-
-        n = len(polygon)
-
-        inside = False
-
-        p1x, p1y = polygon[0]
-
-        for i in range(1, n + 1):
-
-            p2x, p2y = polygon[i % n]
-
-            if y > min(p1y, p2y):
-
-                if y <= max(p1y, p2y):
-
-                    if x <= max(p1x, p2x):
-
-                        if p1y != p2y:
-
-                            xinters = (
-                                (y - p1y)
-                                * (p2x - p1x)
-                                / (p2y - p1y)
-                                + p1x
-                            )
-
-                        if p1x == p2x or x <= xinters:
-
-                            inside = not inside
-
-            p1x, p1y = p2x, p2y
-
-        return inside
+        return x1 <= x <= x2 and y1 <= y <= y2

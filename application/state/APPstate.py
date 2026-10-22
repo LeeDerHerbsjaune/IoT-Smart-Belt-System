@@ -17,3 +17,5 @@ class AppState:
         #ARENA
         self.is_setting = False
         self.beset = False
+                #LABELS
+        self.detected_labels = []

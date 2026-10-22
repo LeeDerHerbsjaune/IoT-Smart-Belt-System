@@ -47,6 +47,35 @@ class ConveyorUseCase:
         self.worker.start()
 
     # ------------------------------------------------------------------
+    @staticmethod
+    def _extract_bbox(product):
+        """
+        Lấy bounding box (x1, y1, x2, y2) từ object product, thử vài tên
+        attribute phổ biến. CHỈNH LẠI nếu class Product dùng tên khác
+        (ví dụ product.xyxy thay vì product.bbox).
+        """
+        for attr in ("bbox", "box", "xyxy", "rect"):
+            if hasattr(product, attr):
+                value = getattr(product, attr)
+                if callable(value):
+                    value = value()
+                return tuple(value)
+        return None
+
+    # ------------------------------------------------------------------
+    @staticmethod
+    def _extract_label(product):
+        """
+        Lấy tên nhãn từ object product, thử vài tên attribute phổ biến.
+        CHỈNH LẠI dòng này nếu class Product dùng tên attribute khác
+        (ví dụ product.class_name thay vì product.label).
+        """
+        for attr in ("class_name", "label", "name", "cls_name"):
+            if hasattr(product, attr):
+                return getattr(product, attr)
+        return str(product)
+
+    # ------------------------------------------------------------------
     def process(self, frame, polygon):
         """
         Được gọi liên tục từ main loop.
@@ -60,6 +89,16 @@ class ConveyorUseCase:
             return
 
         products = self.yolo.detect(frame)
+
+        self.state.detected_labels = [
+            {
+                "label": self._extract_label(p),
+                "center": p.center(),
+                "bbox": self._extract_bbox(p),
+            }
+            for p in products
+        ]
+
         target = None
 
         for product in products:
